@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" /> 
+    <title>MusicBox</title>
+    <link rel=stylesheet href=style.css>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<html>
+    <section>
+    <audio src="music/bohemian_rhapsody_07. Queen - Bohemian Rhapsody.mp3" id="Music"></audio>
+    <div class="container">
+        <div class="ColorPlay"></div>
+        <div class="con1" onclick="prevSong()">
+            <a class="prev" >&#10094;</a>
+        </div>
+        <div class="Album-Container">
+            <div class="Albums">
+                <img src="img\A_Night_At_The_Opera.jpg" alt="" id="pic1">
+            </div>
+
+            <div class="Albums">
+                <img src="img\Innuendo.jpg" alt="" id='pic2' hidden>
+            </div>
+
+            <div class="Albums">
+                <img src="img\Queen_The_Game.png" alt="" id='pic3' hidden>
+            </div>
+        </div>
+        <div class="con2">
+            <a class="next" onclick="nextSong()">&#10095;</a> 
+        </div> 
+        <div class="ColorPlay2"></div> 
+    </div>
+    <div id="pause">
+        <button id="play" onclick="play()">play</button>
+    </div>
+    <div class="MusicName">Bohemian Rhapsody</div> 
+    <div class="AuthorName">Queen</div>
+    <div id="ColorPlay"></div>
+</section>
+<script src="script.js"></script>
+</html>
