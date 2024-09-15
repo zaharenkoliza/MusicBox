@@ -1,6 +1,8 @@
+@import 'fonts.css';
+
 * {box-sizing: border-box;
 color: white;
-font-family: Handjet;}
+font-family: 'FiveYearsLater';}
 
 body{
     background-color: #FED5D5;
@@ -31,9 +33,22 @@ body{
     color: white;
 }
 
+.Albums{
+	height: fit-content;
+}
+
+#backgroud-album{
+	width: 40%;
+	height: 60%;
+	background-color: #db848461;
+	border-radius: 20px;
+	padding:1% 0;
+}
+
 .Album-Container{
-    width: 40%;
-    height: 60%;
+    width: 90%;
+    height: 80%;
+	margin: auto;
 }
 
 img{
@@ -56,9 +71,12 @@ img{
 
 #play{
     background-color: #DB8484;
-    width: 70px;
-    height: 30px;
-    font-size: large;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
 }
 
 .MusicName{
@@ -70,9 +88,9 @@ img{
 
 .AuthorName{
     text-align: center;
-    font-size:xx-large;
+    font-size: 30px;
+	font-weight: 600;
     padding: 5px;
-    font-style: italic;
 }
 
 #ColorPlay{
@@ -102,4 +120,12 @@ img{
 section{
     height: 100vh;
     /* margin-top: 80px; */
+}
+
+.divider{
+	display: block;
+	margin: auto;
+	width: 20vw;
+	height: 2px;
+	background-color: #db848462;
 }

@@ -12,10 +12,19 @@ function play(){
     }
     if (music.paused){
         music.play();
-        document.getElementsByTagName('button')[0].innerHTML = 'pause';
+        changeText();
     }
     else{
         music.pause();
+        changeText();
+    }
+}
+
+function changeText(){
+    if (document.getElementsByTagName('button')[0].innerHTML == 'play') {
+        document.getElementsByTagName('button')[0].innerHTML = 'pause';
+    }
+    else{
         document.getElementsByTagName('button')[0].innerHTML = 'play';
     }
 }
@@ -28,7 +37,7 @@ function nextSong(){
         num+=1;
     }
     music.src = srcs[num-1];
-    play();
+    document.getElementsByTagName('button')[0].innerHTML = 'play';
     for (var i = 1; i<=3; i++){
         if (i != num){
             document.getElementById('pic'+i).style.display = "none";
@@ -48,7 +57,7 @@ function prevSong(){
         num-=1;
     }
     music.src = srcs[num-1];
-    play();
+    document.getElementsByTagName('button')[0].innerHTML = 'play';
     for (var i = 1; i<=3; i++){
         if (i != num){
             document.getElementById('pic'+i).style.display = "none";
